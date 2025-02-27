@@ -1,49 +1,46 @@
-# 📌 **Drecrementador Bitdoglab**
+# Controle de Estoque com Matriz de LEDs e Botões
 
-🚀 **Atividade Embarcatech** | _Criado por:_ **Willomar Soares dos Santos**  
-📌 **Matrícula:** TIC370100624  
-📽️ **Demonstração do Projeto:** [YouTube](https://youtu.be/JtMKJTNdF-g)
+## Descrição do Projeto
+Este projeto implementa um sistema embarcado para controle de estoque utilizando uma matriz de LEDs para exibição numérica, botões para interação do usuário e um LED RGB para indicação de diferentes estados. O objetivo é oferecer uma solução simples e de baixo custo para monitoramento manual de pequenos estoques.
 
----
+## Funcionalidades
+- Exibição numérica da quantidade de itens em estoque utilizando uma matriz de LEDs.
+- Alternância entre diferentes prateleiras com o botão A.
+- Adição de itens ao estoque com o botão B.
+- Indicação da prateleira selecionada por meio do LED RGB.
 
-## 🔥 **Sobre o Projeto**
-Este projeto consiste na criação de um **incrementador e decrementador numérico** utilizando um **Raspberry Pi Pico**, botões físicos e uma **matriz de LEDs WS2812 (NeoPixels)** para exibir números de **0 a 9**. A interação ocorre através de **interrupções (IRQ) com debounce**, garantindo uma resposta precisa aos botões.
+## Componentes Utilizados
+- Microcontrolador Raspberry Pi Pico
+- Matriz de LEDs WS2812
+- LED RGB
+- Botões de entrada
 
----
+## Esquema de Conexões
+| Pino | Componente   | Função                     |
+|------|-------------|----------------------------|
+| 7    | WS2812 LED  | Controle da matriz de LEDs |
+| 5    | Botão A     | Alternar prateleiras       |
+| 6    | Botão B     | Adicionar item             |
+| 8    | LED RGB     | Indicação da prateleira    |
 
-## ✨ **Funcionalidades**
-✅ **LED Vermelho Pisca Constantemente** – Pisca **5 vezes por segundo**.  
-✅ **Botão A** – **Incrementa** o número exibido na matriz de LEDs.  
-✅ **Botão B** – **Decrementa** o número exibido na matriz de LEDs.  
-✅ **Exibição na Matriz de LEDs** – Mostra números **0 a 9** em formato **fixo ou criativo**, garantindo clareza na leitura.  
+## Configuração e Instalação
+1. Instale o ambiente de desenvolvimento para Raspberry Pi Pico.
+2. Clone este repositório.
+3. Compile e carregue o código no microcontrolador.
+4. Conecte os componentes de acordo com o esquema de conexões.
 
----
+## Execução
+Após a inicialização:
+- Pressione o botão A para alternar entre prateleiras.
+- Pressione o botão B para adicionar um item à prateleira selecionada.
+- O número de itens será exibido na matriz de LEDs.
+- O LED RGB indicará a prateleira ativa.
 
-## 📌 **Requisitos Técnicos**
-✔️ **Interrupções (IRQ):** Implementação baseada em **eventos assíncronos** para melhor performance.  
-✔️ **Debounce por Software:** Previne leituras erradas dos botões devido a ruídos elétricos.  
-✔️ **Controle de LEDs:** Utilização de **LED comum** e **LEDs WS2812 (NeoPixels)** para efeitos visuais.  
-✔️ **Código Organizado e Comentado:** Para facilitar a leitura e a manutenção.  
+## Testes e Validação
+Os testes consistem em verificar:
+- Resposta dos botões de controle.
+- Atualização correta da matriz de LEDs.
+- Mudança da cor do LED RGB conforme esperado.
 
----
-
-## 🛠️ **Componentes Utilizados**
-🔹 **Placa BitDogLAb** – Conexões de utilitarios e estabilidade elétrica  
-
----
-
-## 🖥️ **Como Executar o Projeto**
-1️⃣ **Configure o ambiente de desenvolvimento** para Raspberry Pi Pico.
-2️⃣ **Clone esse repositorio** no vscode.   
-3️⃣ **Compile e carregue o código** no microcontrolador.   
-4️⃣ **Pressione os botões** para testar a contagem e observe os LEDs.  
-
----
-
-## 🎨 **Demonstração Visual**
-🎥 **Assista ao funcionamento do projeto aqui:** [YouTube](https://youtu.be/JtMKJTNdF-g)  
-
-📌 Este projeto foi desenvolvido para o **Embarcatech** com o objetivo de aprofundar os conhecimentos em sistemas embarcados e eletrônica digital.  
-
-🔗 **Dúvidas ou sugestões? Entre em contato!** 😃
-
+## YUTUBE
+https://youtu.be/pNBmzJY9DJ0
